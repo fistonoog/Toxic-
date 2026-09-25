@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prod Fils Von | Music Producer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="logo">PROD FILS <span>VON</span></div>
+  <nav id="navMenu">
+    <a href="#home">Home</a>
+    <a href="#beats">Beats</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="menu-btn" onclick="toggleMenu()">☰</button>
+</header>
+
+<main>
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="small-title">MUSIC PRODUCER • BEATMAKER</p>
+      <h1>PROD FILS<br><span>VON</span></h1>
+      <p class="description">
+        Creating dark, emotional and powerful sounds.
+        Welcome to my world of music.
+      </p>
+      <div class="buttons">
+        <a href="#beats" class="btn primary">LISTEN TO BEATS</a>
+        <a href="#contact" class="btn secondary">CONTACT ME</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="beats" class="section">
+    <div class="section-title">
+      <p>MY SOUND</p>
+      <h2>Latest Beats</h2>
+    </div>
+
+    <div class="beats-grid">
+      <div class="beat-card">
+        <div class="beat-cover">01</div>
+        <h3>Dark Emotion</h3>
+        <p>Dark Drill • 140 BPM</p>
+        <button onclick="playBeat('Dark Emotion')">▶ Play Beat</button>
+      </div>
+      <div class="beat-card">
+        <div class="beat-cover">02</div>
+        <h3>Midnight</h3>
+        <p>Trap • 145 BPM</p>
+        <button onclick="playBeat('Midnight')">▶ Play Beat</button>
+      </div>
+      <div class="beat-card">
+        <div class="beat-cover">03</div>
+        <h3>Von World</h3>
+        <p>Hip Hop • 92 BPM</p>
+        <button onclick="playBeat('Von World')">▶ Play Beat</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section about">
+    <div class="section-title">
+      <p>THE PRODUCER</p>
+      <h2>About Me</h2>
+    </div>
+    <div class="about-content">
+      <div class="about-box">
+        <h3>Prod Fils Von</h3>
+        <p>
+          I am a music producer focused on creating unique melodies,
+          hard drums and emotional sounds. My goal is to build sounds
+          that people remember.
+        </p>
+        <div class="stats">
+          <div><strong>50+</strong><span>Beats</span></div>
+          <div><strong>10+</strong><span>Artists</span></div>
+          <div><strong>∞</strong><span>Ideas</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tag-section">
+    <p>PRODUCER TAG</p>
+    <h2>“This beat is produced by<br><span>Prod Fils The Von.</span>”</h2>
+    <button onclick="playTag()">▶ PLAY TAG</button>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="section-title">
+      <p>LET'S WORK</p>
+      <h2>Contact Me</h2>
+    </div>
+    <form onsubmit="sendMessage(event)">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="email" id="email" placeholder="Your Email" required>
+      <textarea id="message" placeholder="Tell me about your project..." required></textarea>
+      <button type="submit" class="btn primary">SEND MESSAGE</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <h3>PROD FILS <span>VON</span></h3>
+  <p>Music • Beats • Creativity</p>
+  <div class="socials">
+    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a>
+    <a href="#" onclick="comingSoon(event, 'YouTube')">YouTube</a>
+    <a href="#" onclick="comingSoon(event, 'TikTok')">TikTok</a>
+  </div>
+  <p class="copyright">© 2026 Prod Fils Von. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
